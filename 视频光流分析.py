@@ -79,7 +79,10 @@ def 删除静止点的光流检测():
         if good_ini.shape[0] < 40:
             p0 = cv2.goodFeaturesToTrack(old_gray, mask=None, **feature_params)
             good_ini = p0.copy()
-删除静止点的光流检测()
-        
+#删除静止点的光流检测()
+def 反向检测的光流分析():
+    cap = cv2.VideoCapture('opencv\\files\\vtest.avi')
+    #角点检测参数  
+    feature_params=dict(maxCorners=100,qualityLevel=0.1)
 
                 
